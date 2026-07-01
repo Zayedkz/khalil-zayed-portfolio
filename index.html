@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Khalil Zayed - Software Engineer focused on GenAI platforms, enterprise applications, developer productivity, and AI product engineering."
+    />
+    <title>Khalil Zayed | Software Engineer</title>
+    <link rel="preload" href="assets/hero-tech-workspace.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Khalil Zayed home">KZ</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+      </nav>
+      <a class="header-action" href="mailto:khalilzayedca@gmail.com">Contact</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-media"
+          src="assets/hero-tech-workspace.png"
+          alt="Abstract workstation with AI system dashboards and architecture panels"
+        />
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Software Engineer - GenAI Platforms - Enterprise Applications</p>
+          <h1 id="hero-title">Khalil Zayed</h1>
+          <p class="hero-copy">
+            Software engineer in Toronto with 4+ years building enterprise software,
+            internal automation, developer platforms, and production GenAI solutions.
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="#projects">View projects</a>
+            <a class="button secondary" href="https://github.com/Zayedkz">GitHub</a>
+            <a class="button secondary" href="https://linkedin.com/in/khalil-zayed">LinkedIn</a>
+          </div>
+          <dl class="hero-metrics" aria-label="Profile highlights">
+            <div>
+              <dt>4+</dt>
+              <dd>Years full-time engineering</dd>
+            </div>
+            <div>
+              <dt>4</dt>
+              <dd>AI portfolio systems</dd>
+            </div>
+            <div>
+              <dt>Azure</dt>
+              <dd>OpenAI, AI Search, Container Apps</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section profile-section" aria-labelledby="profile-title">
+        <div class="section-heading">
+          <p class="eyebrow">Profile</p>
+          <h2 id="profile-title">AI platform engineer with enterprise delivery depth.</h2>
+        </div>
+        <div class="profile-grid">
+          <p>
+            I build practical AI and internal software systems: enterprise ChatGPT
+            platforms, retrieval workflows, developer tooling, cloud-backed services,
+            and stakeholder-driven applications that survive real operational use.
+          </p>
+          <p>
+            My current portfolio focuses on production-style AI systems with clean
+            architecture, tests, CI, documentation, persistence, retrieval, observability,
+            and responsible model boundaries.
+          </p>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Kinectrics</h2>
+        </div>
+        <div class="timeline">
+          <article class="role">
+            <div class="role-meta">
+              <span>May 2022 - Present</span>
+              <span>Toronto, ON</span>
+            </div>
+            <h3>Software Engineer, Permanent Full-Time</h3>
+            <ul>
+              <li>
+                Led implementation and production support of an internal enterprise GenAI
+                platform using LibreChat and Azure OpenAI.
+              </li>
+              <li>
+                Designed RAG and knowledge-search capabilities with Azure AI Search across
+                SharePoint and Intelex content.
+              </li>
+              <li>
+                Implemented document upload, retrieval, generated artifact, and controlled
+                file-handling workflows using Azure Blob Storage, MongoDB/Cosmos DB, and
+                PostgreSQL/pgvector.
+              </li>
+              <li>
+                Deployed an MCP/code-interpreter service with Python and Azure Container Apps
+                for session-scoped tool execution and artifact exchange.
+              </li>
+              <li>
+                Supported GitHub Enterprise modernization, GitHub Actions patterns,
+                protected branches, repository standards, onboarding, and Copilot adoption.
+              </li>
+              <li>
+                Delivered internal applications with ASP.NET Core MVC, Node.js, Express,
+                Electron.js, SQL Server, PostgreSQL, Python, and C++ modules.
+              </li>
+            </ul>
+          </article>
+          <article class="role">
+            <div class="role-meta">
+              <span>Sep 2019 - May 2022</span>
+              <span>Toronto, ON</span>
+            </div>
+            <h3>Software Engineer Intern</h3>
+            <ul>
+              <li>
+                Built ArcGIS, JavaScript, and Python tools for visualizing asset condition
+                assessments with geographic and engineering context.
+              </li>
+              <li>
+                Developed PostgreSQL database management solutions for historical asset
+                condition assessments and automated import workflows.
+              </li>
+              <li>
+                Modernized engineering tools by gathering requirements, documenting use
+                cases, validating workflows, and delivering maintainable internal software.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2 id="projects-title">AI systems built like real products.</h2>
+        </div>
+        <div class="project-toolbar" aria-label="Project filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="rag">RAG</button>
+          <button class="filter-button" type="button" data-filter="devtools">DevTools</button>
+          <button class="filter-button" type="button" data-filter="ops">Operations</button>
+          <button class="filter-button" type="button" data-filter="research">Research</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="rag">
+            <div class="project-topline">
+              <span>RAG Platform</span>
+              <a href="https://github.com/Zayedkz/ai-knowledgeops-platform">GitHub</a>
+            </div>
+            <h3>AI KnowledgeOps Platform</h3>
+            <p>
+              Production-style RAG platform for document ingestion, chunking, queued
+              embeddings, vector retrieval, metadata filtering, and citation-first answers.
+            </p>
+            <ul class="project-points">
+              <li>FastAPI, SQLAlchemy, Alembic, PostgreSQL/pgvector direction</li>
+              <li>Embedding worker leases, retries, and deterministic local provider</li>
+              <li>Retrieval endpoint with citation evidence and tests</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="devtools">
+            <div class="project-topline">
+              <span>Developer Productivity</span>
+              <a href="https://github.com/Zayedkz/ai-code-review-agent">GitHub</a>
+            </div>
+            <h3>AI Code Review Agent</h3>
+            <p>
+              GitHub-integrated PR review service with webhook intake, signature verification,
+              idempotent event recording, and deterministic review findings.
+            </p>
+            <ul class="project-points">
+              <li>TypeScript, Express, Zod, Vitest, ESLint</li>
+              <li>Webhook security with x-hub-signature-256 verification</li>
+              <li>Risk checks for large diffs, missing tests, and secret handling</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="ops">
+            <div class="project-topline">
+              <span>Incident Response</span>
+              <a href="https://github.com/Zayedkz/ai-incident-response-assistant">GitHub</a>
+            </div>
+            <h3>AI Incident Response Assistant</h3>
+            <p>
+              Incident workflow service for event intake, timeline generation, deterministic
+              summaries, risk classification, and recommended response actions.
+            </p>
+            <ul class="project-points">
+              <li>FastAPI, typed incident events, deterministic summarizer</li>
+              <li>Sources for alerts, logs, metrics, deploys, and human updates</li>
+              <li>Designed for future correlation workers and postmortems</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-category="research">
+            <div class="project-topline">
+              <span>AI Research Workspace</span>
+              <a href="https://github.com/Zayedkz/multi-agent-research-workspace">GitHub</a>
+            </div>
+            <h3>Multi-Agent Research Workspace</h3>
+            <p>
+              Research product for source collection, credibility scoring, evidence cards,
+              cited preliminary briefs, source deduplication, and research gap detection.
+            </p>
+            <ul class="project-points">
+              <li>FastAPI, SQLAlchemy, Alembic, SQLite-backed tests</li>
+              <li>Per-project deduplication by normalized URL or title</li>
+              <li>Built for search, verifier, synthesis, critic, and citation agents</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Skills</p>
+          <h2 id="skills-title">Built across AI, cloud, data, and enterprise application layers.</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-group">
+            <h3>AI / Search / GenAI</h3>
+            <p>LibreChat, Azure OpenAI, Azure AI Search, RAG, SharePoint, Intelex, Google Search, MCP server, code interpreter workflows</p>
+          </div>
+          <div class="skill-group">
+            <h3>Cloud / Data / DevOps</h3>
+            <p>Azure Container Apps, Azure Blob Storage, Cosmos DB, MongoDB, PostgreSQL, pgvector, Docker, Azure DevOps, GitHub Enterprise, GitHub Actions</p>
+          </div>
+          <div class="skill-group">
+            <h3>Software Development</h3>
+            <p>C#, ASP.NET Core MVC, Entity Framework Core, SQL Server, JavaScript, TypeScript, Node.js, Express.js, Electron.js, Python, C++, React, Puppeteer, ArcGIS</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section education-section" id="education" aria-labelledby="education-title">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">Ontario Tech University</h2>
+        </div>
+        <div class="education-panel">
+          <div>
+            <h3>Bachelor of Engineering, Software Engineering</h3>
+            <p>2017 - 2022</p>
+          </div>
+          <div>
+            <p>Internet of Things Specialization</p>
+            <p>President's List</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Open to AI platform, enterprise software, and developer productivity roles.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:khalilzayedca@gmail.com">Email Khalil</a>
+          <a class="button secondary" href="https://linkedin.com/in/khalil-zayed">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/Zayedkz">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Khalil Zayed</span>
+      <span>Toronto, Canada</span>
+      <span>khalilzayedca@gmail.com</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
