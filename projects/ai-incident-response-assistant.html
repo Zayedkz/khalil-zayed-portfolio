@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AI Incident Response Assistant project detail: typed event intake, ordered timelines, risk classification, and deterministic incident summaries."
+    />
+    <title>AI Incident Response Assistant | Khalil Zayed</title>
+    <link rel="preload" href="../assets/hero-tech-workspace.png" as="image" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="Khalil Zayed home">KZ</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#education">Education</a>
+      </nav>
+      <a class="header-action" href="mailto:khalilzayedca@gmail.com">Contact</a>
+    </header>
+
+    <main class="detail-main">
+      <section class="detail-hero" aria-labelledby="project-title">
+        <img class="detail-media" src="../assets/hero-tech-workspace.png" alt="Incident operations dashboard" />
+        <div class="detail-scrim"></div>
+        <div class="detail-hero-content">
+          <a class="back-link" href="../index.html#projects">Back to projects</a>
+          <p class="eyebrow">Incident Response</p>
+          <h1 id="project-title">AI Incident Response Assistant</h1>
+          <p class="hero-copy">
+            Incident workflow service for typed event intake, ordered timelines, risk
+            classification, impacted-service extraction, deterministic summaries, and
+            recommended response actions.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/Zayedkz/ai-incident-response-assistant">View GitHub</a>
+            <a class="button secondary" href="../index.html#projects">Portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section detail-section" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2 id="overview-title">Operational evidence becomes a usable timeline.</h2>
+        </div>
+        <div class="detail-grid">
+          <div>
+            <h3>Problem</h3>
+            <p>
+              During incidents, alerts, deploy notes, metrics, logs, and human updates
+              arrive out of order. Teams need a shared timeline and clear next actions.
+            </p>
+          </div>
+          <div>
+            <h3>Implemented</h3>
+            <ul class="detail-list">
+              <li>FastAPI endpoints for incident creation and event intake</li>
+              <li>Typed sources for alerts, logs, metrics, deploys, and humans</li>
+              <li>Deterministic timeline ordering and risk classification</li>
+              <li>Recommended actions based on criticality and source signals</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section snapshot-section" aria-labelledby="snapshot-title">
+        <div class="section-heading">
+          <p class="eyebrow">System Snapshot</p>
+          <h2 id="snapshot-title">Every event contributes to the incident picture.</h2>
+        </div>
+        <div class="system-snapshot">
+          <div class="snapshot-node">Alert</div>
+          <div class="snapshot-arrow">event</div>
+          <div class="snapshot-node">Timeline</div>
+          <div class="snapshot-arrow">severity</div>
+          <div class="snapshot-node">Risk</div>
+          <div class="snapshot-arrow">services</div>
+          <div class="snapshot-node">Summary</div>
+          <div class="snapshot-arrow">actions</div>
+          <div class="snapshot-node">Responder</div>
+        </div>
+      </section>
+
+      <section class="section detail-section" aria-labelledby="signals-title">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Signals</p>
+          <h2 id="signals-title">What this repo demonstrates.</h2>
+        </div>
+        <div class="detail-grid three">
+          <div>
+            <h3>Reliability</h3>
+            <p>Raw incident event capture is modeled separately from future enrichment providers.</p>
+          </div>
+          <div>
+            <h3>Operations</h3>
+            <p>Risk, impacted services, and recommended actions are computed from timeline evidence.</p>
+          </div>
+          <div>
+            <h3>Testing</h3>
+            <p>Tests cover API flow, missing incidents, timeline ordering, risk, and empty incidents.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section next-section" aria-labelledby="next-title">
+        <div class="section-heading">
+          <p class="eyebrow">Next</p>
+          <h2 id="next-title">Strongest improvements.</h2>
+        </div>
+        <ol class="numbered-list">
+          <li>Add PostgreSQL persistence and Alembic migrations.</li>
+          <li>Add incident status transitions with audit history.</li>
+          <li>Add Redis-backed correlation workers and evidence-constrained postmortems.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Khalil Zayed</span>
+      <span>AI Incident Response Assistant</span>
+      <span><a href="../index.html#projects">Back to projects</a></span>
+    </footer>
+  </body>
+</html>

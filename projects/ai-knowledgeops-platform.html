@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AI KnowledgeOps Platform project detail: production-style retrieval platform with ingestion, embedding jobs, retrieval, and citation evidence."
+    />
+    <title>AI KnowledgeOps Platform | Khalil Zayed</title>
+    <link rel="preload" href="../assets/hero-tech-workspace.png" as="image" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="Khalil Zayed home">KZ</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#education">Education</a>
+      </nav>
+      <a class="header-action" href="mailto:khalilzayedca@gmail.com">Contact</a>
+    </header>
+
+    <main class="detail-main">
+      <section class="detail-hero" aria-labelledby="project-title">
+        <img
+          class="detail-media"
+          src="../assets/hero-tech-workspace.png"
+          alt="AI system dashboards and architecture panels"
+        />
+        <div class="detail-scrim"></div>
+        <div class="detail-hero-content">
+          <a class="back-link" href="../index.html#projects">Back to projects</a>
+          <p class="eyebrow">RAG Platform</p>
+          <h1 id="project-title">AI KnowledgeOps Platform</h1>
+          <p class="hero-copy">
+            Production-style retrieval platform for internal knowledge bases, built around
+            idempotent ingestion, leased embedding jobs, metadata-filtered retrieval, and
+            grounded citation responses.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/Zayedkz/ai-knowledgeops-platform">View GitHub</a>
+            <a class="button secondary" href="../index.html#projects">Portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section detail-section" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2 id="overview-title">A retrieval backend that refuses unsupported answers.</h2>
+        </div>
+        <div class="detail-grid">
+          <div>
+            <h3>Problem</h3>
+            <p>
+              Teams spread operational knowledge across documents, tickets, runbooks,
+              and internal tools. Plain search returns files, while naive chat over
+              documents can invent unsupported answers.
+            </p>
+          </div>
+          <div>
+            <h3>Implemented</h3>
+            <ul class="detail-list">
+              <li>FastAPI document ingestion and chunk persistence</li>
+              <li>Embedding job records with worker leases and retry state</li>
+              <li>Deterministic local embedding provider for CI-safe tests</li>
+              <li>Metadata-filtered cosine retrieval with ranked citations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section snapshot-section" aria-labelledby="snapshot-title">
+        <div class="section-heading">
+          <p class="eyebrow">System Snapshot</p>
+          <h2 id="snapshot-title">Ingestion, indexing, and retrieval stay explicit.</h2>
+        </div>
+        <div class="system-snapshot">
+          <div class="snapshot-node">Client</div>
+          <div class="snapshot-arrow">POST /documents</div>
+          <div class="snapshot-node">Chunking</div>
+          <div class="snapshot-arrow">jobs</div>
+          <div class="snapshot-node">Embedding Worker</div>
+          <div class="snapshot-arrow">vectors</div>
+          <div class="snapshot-node">Retriever</div>
+          <div class="snapshot-arrow">citations</div>
+          <div class="snapshot-node">Query Response</div>
+        </div>
+      </section>
+
+      <section class="section detail-section" aria-labelledby="signals-title">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Signals</p>
+          <h2 id="signals-title">What this repo demonstrates.</h2>
+        </div>
+        <div class="detail-grid three">
+          <div>
+            <h3>Reliability</h3>
+            <p>Idempotent ingestion, durable job state, bounded worker batches, and stale lease recovery.</p>
+          </div>
+          <div>
+            <h3>AI Boundaries</h3>
+            <p>Retrieval is citation-first and intentionally avoids LLM synthesis until evidence constraints exist.</p>
+          </div>
+          <div>
+            <h3>Testing</h3>
+            <p>Focused pytest coverage across ingestion, chunking, worker behavior, retrieval, and API contracts.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section next-section" aria-labelledby="next-title">
+        <div class="section-heading">
+          <p class="eyebrow">Next</p>
+          <h2 id="next-title">Strongest improvements.</h2>
+        </div>
+        <ol class="numbered-list">
+          <li>Add query event persistence and retrieval observability.</li>
+          <li>Add a real embedding provider adapter.</li>
+          <li>Add citation-constrained answer synthesis and a small RAG evaluation runner.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Khalil Zayed</span>
+      <span>AI KnowledgeOps Platform</span>
+      <span><a href="../index.html#projects">Back to projects</a></span>
+    </footer>
+  </body>
+</html>

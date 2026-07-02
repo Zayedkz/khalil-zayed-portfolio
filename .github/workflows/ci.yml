@@ -18,20 +18,46 @@ jobs:
           python - <<'PY'
           from html.parser import HTMLParser
           from pathlib import Path
+          from urllib.parse import urlparse
 
           class Parser(HTMLParser):
-              pass
+              def __init__(self):
+                  super().__init__()
+                  self.refs = []
+
+              def handle_starttag(self, tag, attrs):
+                  values = dict(attrs)
+                  for attr in ("href", "src"):
+                      if attr in values:
+                          self.refs.append(values[attr])
 
           required = [
               Path("index.html"),
               Path("styles.css"),
               Path("script.js"),
               Path("assets/hero-tech-workspace.png"),
+              Path("projects/ai-knowledgeops-platform.html"),
+              Path("projects/ai-code-review-agent.html"),
+              Path("projects/ai-incident-response-assistant.html"),
+              Path("projects/multi-agent-research-workspace.html"),
           ]
           for path in required:
               if not path.exists():
                   raise SystemExit(f"Missing required file: {path}")
 
-          Parser().feed(Path("index.html").read_text(encoding="utf-8"))
+          pages = [Path("index.html"), *sorted(Path("projects").glob("*.html"))]
+          for page in pages:
+              parser = Parser()
+              parser.feed(page.read_text(encoding="utf-8"))
+              for ref in parser.refs:
+                  parsed = urlparse(ref)
+                  if parsed.scheme or ref.startswith(("mailto:", "#")):
+                      continue
+                  local = (page.parent / parsed.path).resolve()
+                  root = Path.cwd().resolve()
+                  if root not in [local, *local.parents]:
+                      raise SystemExit(f"Reference escapes site root in {page}: {ref}")
+                  if not local.exists():
+                      raise SystemExit(f"Broken local reference in {page}: {ref}")
           print("Static portfolio checks passed")
           PY

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AI Code Review Agent project detail: signed GitHub webhook intake, pull request normalization, idempotent event handling, and deterministic review findings."
+    />
+    <title>AI Code Review Agent | Khalil Zayed</title>
+    <link rel="preload" href="../assets/hero-tech-workspace.png" as="image" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="Khalil Zayed home">KZ</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#education">Education</a>
+      </nav>
+      <a class="header-action" href="mailto:khalilzayedca@gmail.com">Contact</a>
+    </header>
+
+    <main class="detail-main">
+      <section class="detail-hero" aria-labelledby="project-title">
+        <img class="detail-media" src="../assets/hero-tech-workspace.png" alt="Developer tooling dashboard" />
+        <div class="detail-scrim"></div>
+        <div class="detail-hero-content">
+          <a class="back-link" href="../index.html#projects">Back to projects</a>
+          <p class="eyebrow">Developer Productivity</p>
+          <h1 id="project-title">AI Code Review Agent</h1>
+          <p class="hero-copy">
+            GitHub webhook service for automated pull request triage, with signed delivery
+            verification, normalized review events, idempotent storage, and deterministic
+            risk findings.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/Zayedkz/ai-code-review-agent">View GitHub</a>
+            <a class="button secondary" href="../index.html#projects">Portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section detail-section" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2 id="overview-title">A review agent starts with trustworthy event intake.</h2>
+        </div>
+        <div class="detail-grid">
+          <div>
+            <h3>Problem</h3>
+            <p>
+              Pull requests accumulate repetitive review concerns: large diffs, missing
+              tests, debug markers, placeholder work, and risky secret-handling patterns.
+            </p>
+          </div>
+          <div>
+            <h3>Implemented</h3>
+            <ul class="detail-list">
+              <li>Express webhook endpoint with raw-body HMAC verification</li>
+              <li>Zod validation and normalized pull request event model</li>
+              <li>Idempotent delivery handling by GitHub delivery ID</li>
+              <li>Deterministic findings with severity and recommendations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section snapshot-section" aria-labelledby="snapshot-title">
+        <div class="section-heading">
+          <p class="eyebrow">System Snapshot</p>
+          <h2 id="snapshot-title">Signed webhook deliveries become review decisions.</h2>
+        </div>
+        <div class="system-snapshot">
+          <div class="snapshot-node">GitHub</div>
+          <div class="snapshot-arrow">signature</div>
+          <div class="snapshot-node">Verify</div>
+          <div class="snapshot-arrow">validate</div>
+          <div class="snapshot-node">Normalize</div>
+          <div class="snapshot-arrow">dedupe</div>
+          <div class="snapshot-node">Reviewer</div>
+          <div class="snapshot-arrow">findings</div>
+          <div class="snapshot-node">Response</div>
+        </div>
+      </section>
+
+      <section class="section detail-section" aria-labelledby="signals-title">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Signals</p>
+          <h2 id="signals-title">What this repo demonstrates.</h2>
+        </div>
+        <div class="detail-grid three">
+          <div>
+            <h3>Security</h3>
+            <p>GitHub `x-hub-signature-256` verification happens before payload processing.</p>
+          </div>
+          <div>
+            <h3>Idempotency</h3>
+            <p>Duplicate webhook delivery IDs return the original result without reprocessing.</p>
+          </div>
+          <div>
+            <h3>Quality</h3>
+            <p>Lint, typecheck, Vitest, Supertest, and npm audit validate the first slice.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section next-section" aria-labelledby="next-title">
+        <div class="section-heading">
+          <p class="eyebrow">Next</p>
+          <h2 id="next-title">Strongest improvements.</h2>
+        </div>
+        <ol class="numbered-list">
+          <li>Add PostgreSQL-backed event storage and migrations.</li>
+          <li>Retrieve pull request file diffs from GitHub.</li>
+          <li>Add BullMQ review jobs and an LLM provider behind deterministic checks.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Khalil Zayed</span>
+      <span>AI Code Review Agent</span>
+      <span><a href="../index.html#projects">Back to projects</a></span>
+    </footer>
+  </body>
+</html>

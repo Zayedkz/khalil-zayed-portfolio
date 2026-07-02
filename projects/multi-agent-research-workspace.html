@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Multi-Agent Research Workspace project detail: source intake, credibility scoring, source review workflow, deduplication, and cited preliminary briefs."
+    />
+    <title>Multi-Agent Research Workspace | Khalil Zayed</title>
+    <link rel="preload" href="../assets/hero-tech-workspace.png" as="image" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="../index.html#top" aria-label="Khalil Zayed home">KZ</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="../index.html#experience">Experience</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#skills">Skills</a>
+        <a href="../index.html#education">Education</a>
+      </nav>
+      <a class="header-action" href="mailto:khalilzayedca@gmail.com">Contact</a>
+    </header>
+
+    <main class="detail-main">
+      <section class="detail-hero" aria-labelledby="project-title">
+        <img class="detail-media" src="../assets/hero-tech-workspace.png" alt="Research workspace dashboard" />
+        <div class="detail-scrim"></div>
+        <div class="detail-hero-content">
+          <a class="back-link" href="../index.html#projects">Back to projects</a>
+          <p class="eyebrow">AI Research Workspace</p>
+          <h1 id="project-title">Multi-Agent Research Workspace</h1>
+          <p class="hero-copy">
+            AI-ready research workspace for collecting sources, reviewing evidence quality,
+            deduplicating source intake, and generating cited preliminary briefs from
+            auditable evidence cards.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://github.com/Zayedkz/multi-agent-research-workspace">View GitHub</a>
+            <a class="button secondary" href="../index.html#projects">Portfolio</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section detail-section" aria-labelledby="overview-title">
+        <div class="section-heading">
+          <p class="eyebrow">Overview</p>
+          <h2 id="overview-title">Research automation needs evidence controls first.</h2>
+        </div>
+        <div class="detail-grid">
+          <div>
+            <h3>Problem</h3>
+            <p>
+              Research work often becomes scattered links, copied summaries, and unclear
+              provenance. Automated synthesis is only useful when evidence can be reviewed.
+            </p>
+          </div>
+          <div>
+            <h3>Implemented</h3>
+            <ul class="detail-list">
+              <li>Research projects and source intake with provenance metadata</li>
+              <li>SQLAlchemy persistence and Alembic migrations</li>
+              <li>Per-project source deduplication by normalized URL or title</li>
+              <li>Source review statuses and verified-source-first brief generation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section snapshot-section" aria-labelledby="snapshot-title">
+        <div class="section-heading">
+          <p class="eyebrow">System Snapshot</p>
+          <h2 id="snapshot-title">Candidate sources move through review before synthesis.</h2>
+        </div>
+        <div class="system-snapshot">
+          <div class="snapshot-node">Question</div>
+          <div class="snapshot-arrow">sources</div>
+          <div class="snapshot-node">Dedupe</div>
+          <div class="snapshot-arrow">score</div>
+          <div class="snapshot-node">Review</div>
+          <div class="snapshot-arrow">verified</div>
+          <div class="snapshot-node">Evidence</div>
+          <div class="snapshot-arrow">brief</div>
+          <div class="snapshot-node">Researcher</div>
+        </div>
+      </section>
+
+      <section class="section detail-section" aria-labelledby="signals-title">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Signals</p>
+          <h2 id="signals-title">What this repo demonstrates.</h2>
+        </div>
+        <div class="detail-grid three">
+          <div>
+            <h3>Persistence</h3>
+            <p>Research projects and sources are database-backed with migration history.</p>
+          </div>
+          <div>
+            <h3>Evidence Quality</h3>
+            <p>Briefs prefer verified sources and exclude rejected material from generated evidence.</p>
+          </div>
+          <div>
+            <h3>Agent Readiness</h3>
+            <p>The source model prepares clean handoffs for search, verification, synthesis, critique, and citation agents.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section next-section" aria-labelledby="next-title">
+        <div class="section-heading">
+          <p class="eyebrow">Next</p>
+          <h2 id="next-title">Strongest improvements.</h2>
+        </div>
+        <ol class="numbered-list">
+          <li>Add async agent run records for search, verification, synthesis, critique, and citations.</li>
+          <li>Add a source-review board UI.</li>
+          <li>Add Markdown/PDF exports with citation bundles.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Khalil Zayed</span>
+      <span>Multi-Agent Research Workspace</span>
+      <span><a href="../index.html#projects">Back to projects</a></span>
+    </footer>
+  </body>
+</html>
