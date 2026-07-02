@@ -163,13 +163,14 @@
             </div>
             <h3>AI KnowledgeOps Platform</h3>
             <p>
-              Production-style RAG platform for document ingestion, chunking, queued
-              embeddings, vector retrieval, metadata filtering, and citation-first answers.
+              Production-style retrieval platform for internal knowledge bases, with
+              idempotent ingestion, leased embedding jobs, metadata-filtered retrieval,
+              and grounded citation responses.
             </p>
             <ul class="project-points">
-              <li>FastAPI, SQLAlchemy, Alembic, PostgreSQL/pgvector direction</li>
-              <li>Embedding worker leases, retries, and deterministic local provider</li>
-              <li>Retrieval endpoint with citation evidence and tests</li>
+              <li>FastAPI, SQLAlchemy, Alembic, PostgreSQL/pgvector path</li>
+              <li>Deterministic local embedding provider for CI-safe tests</li>
+              <li>Query endpoint returns ranked citation evidence</li>
             </ul>
           </article>
 
@@ -180,13 +181,14 @@
             </div>
             <h3>AI Code Review Agent</h3>
             <p>
-              GitHub-integrated PR review service with webhook intake, signature verification,
-              idempotent event recording, and deterministic review findings.
+              GitHub webhook service for automated pull request triage, with signed
+              delivery verification, normalized review events, idempotent storage, and
+              deterministic risk findings.
             </p>
             <ul class="project-points">
               <li>TypeScript, Express, Zod, Vitest, ESLint</li>
               <li>Webhook security with x-hub-signature-256 verification</li>
-              <li>Risk checks for large diffs, missing tests, and secret handling</li>
+              <li>Flags large changes, missing tests, debug markers, and secret risks</li>
             </ul>
           </article>
 
@@ -214,13 +216,14 @@
             </div>
             <h3>Multi-Agent Research Workspace</h3>
             <p>
-              Research product for source collection, credibility scoring, evidence cards,
-              cited preliminary briefs, source deduplication, and research gap detection.
+              AI-ready research workspace for collecting sources, reviewing evidence
+              quality, deduplicating source intake, and generating cited preliminary briefs
+              from auditable evidence cards.
             </p>
             <ul class="project-points">
-              <li>FastAPI, SQLAlchemy, Alembic, SQLite-backed tests</li>
-              <li>Per-project deduplication by normalized URL or title</li>
-              <li>Built for search, verifier, synthesis, critic, and citation agents</li>
+              <li>FastAPI, SQLAlchemy, Alembic, PostgreSQL with SQLite-backed tests</li>
+              <li>Source review statuses: candidate, verified, rejected, needs review</li>
+              <li>Briefs prefer verified sources and exclude rejected material</li>
             </ul>
           </article>
         </div>
