@@ -36,6 +36,7 @@ jobs:
               Path("styles.css"),
               Path("script.js"),
               Path("assets/hero-tech-workspace.png"),
+              Path("projects/ai-architecture-review-assistant.html"),
               Path("projects/ai-knowledgeops-platform.html"),
               Path("projects/ai-code-review-agent.html"),
               Path("projects/ai-incident-response-assistant.html"),

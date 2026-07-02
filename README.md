@@ -18,7 +18,7 @@ Then visit `http://localhost:8080`.
 - Kinectrics professional experience
 - Ontario Tech University education
 - Technical skills
-- AI portfolio project showcase
+- AI portfolio project showcase with project detail pages
 - Contact links
 
 ## Deployment
